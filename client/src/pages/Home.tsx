@@ -75,21 +75,23 @@ const Home = () => {
                 className="flex flex-wrap gap-4"
                 variants={fadeInUp}
               >
-                <Link href="/projects">
-                  <a className={cn(
+                <Link 
+                  href="/projects"
+                  className={cn(
                     buttonVariants({ size: "lg" }),
                     "rounded-full bg-primary hover:bg-primary/90 font-accent"
-                  )}>
-                    View Projects
-                  </a>
+                  )}
+                >
+                  View Projects
                 </Link>
-                <Link href="/contact">
-                  <a className={cn(
+                <Link 
+                  href="/contact"
+                  className={cn(
                     buttonVariants({ variant: "outline", size: "lg" }),
                     "rounded-full border-primary text-primary hover:bg-primary hover:text-white font-accent"
-                  )}>
-                    Contact Me
-                  </a>
+                  )}
+                >
+                  Contact Me
                 </Link>
               </motion.div>
             </motion.div>
@@ -164,13 +166,14 @@ const Home = () => {
           </motion.div>
 
           <div className="mt-16 text-center">
-            <Link href="/projects">
-              <a className={cn(
+            <Link 
+              href="/projects"
+              className={cn(
                 buttonVariants({ size: "lg" }),
                 "rounded-full bg-primary hover:bg-primary/90 font-accent"
-              )}>
-                View All Projects
-              </a>
+              )}
+            >
+              View All Projects
             </Link>
           </div>
         </div>
