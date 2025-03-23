@@ -51,7 +51,7 @@ const Home = () => {
               }}
             >
               <motion.h4
-                className="font-accent text-[#ff7675] uppercase tracking-wider mb-4"
+                className="font-accent text-[#6b7280] uppercase tracking-wider mb-4"
                 variants={fadeInUp}
               >
                 Hello, I'm
@@ -72,9 +72,11 @@ const Home = () => {
                 className="text-lg text-neutral-600 mb-10 max-w-xl"
                 variants={fadeInUp}
               >
-                Leveraging data and technology to solve complex problems while
-                advocating for women in STEM fields. Focused on creating
-                meaningful visualizations that tell compelling stories.
+                Computer Science and Marketing graduate of Boston College,
+                combining technology and creativity to deliver impactful
+                solutions. Passionate about software engineering, data science,
+                and full-stack development, with a focus on coding, data
+                visualization, and collaborative problem-solving.
               </motion.p>
               <motion.div className="flex flex-wrap gap-4" variants={fadeInUp}>
                 <Link
@@ -107,7 +109,7 @@ const Home = () => {
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-[#ff7675] opacity-70 blur-xl"></div>
                 <div className="h-64 w-64 sm:h-80 sm:w-80 rounded-full overflow-hidden relative border-8 border-white shadow-xl">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    src="https://github.com/emmad225/PersonalWebsiteImages/blob/ac0a1f6112d5a2872f74900cc314fe160732518c/SOLO%20cropped.jpg?raw=true"
                     alt="Portrait of Emma Duffy"
                     className="w-full h-full object-cover"
                   />
@@ -166,22 +168,10 @@ const Home = () => {
               </motion.div>
             ))}
           </motion.div>
-
-          <div className="mt-16 text-center">
-            <Link
-              href="/projects"
-              className={cn(
-                buttonVariants({ size: "lg" }),
-                "rounded-full bg-primary hover:bg-primary/90 font-accent",
-              )}
-            >
-              View All Projects
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer included in every page */}
       <footer className="bg-neutral-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -190,7 +180,7 @@ const Home = () => {
                 Emma<span className="text-[#ff7675]">Duffy</span>
               </span>
               <p className="text-neutral-400 mt-2">
-                Data Scientist & STEM Advocate
+                Software and Data Engineering
               </p>
             </div>
 
@@ -210,15 +200,7 @@ const Home = () => {
               <a
                 href="#"
                 className="text-neutral-400 hover:text-white transition-colors"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
+              ></a>
             </div>
           </div>
 

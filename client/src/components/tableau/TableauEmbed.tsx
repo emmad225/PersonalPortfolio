@@ -12,7 +12,6 @@ const TableauEmbed = ({ url, title, description }: TableauEmbedProps) => {
   useEffect(() => {
     // This is where the actual implementation would go once we have real Tableau URLs
     // For now, we're just showing a placeholder since we don't have actual Tableau visualization URLs
-    
     // The actual implementation would look something like:
     // if (window.tableau && vizRef.current) {
     //   const viz = new window.tableau.Viz(vizRef.current, url, {
@@ -27,7 +26,9 @@ const TableauEmbed = ({ url, title, description }: TableauEmbedProps) => {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden mb-12">
       <div className="p-6 border-b border-neutral-200">
-        <h3 className="text-xl font-display font-bold text-neutral-800">{title}</h3>
+        <h3 className="text-xl font-display font-bold text-neutral-800">
+          {title}
+        </h3>
         <p className="text-neutral-600 mt-2">{description}</p>
       </div>
       <div className="h-96 w-full" ref={vizRef}>
