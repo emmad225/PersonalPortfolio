@@ -60,8 +60,8 @@ const Navbar = () => {
                 key={link.path} 
                 href={link.path}
                 className={cn(
-                  "relative py-5 px-1 hover:text-primary transition group",
-                  isActive(link.path) ? "text-primary" : "text-neutral-800"
+                  "relative py-5 px-1 hover:text-[#3e5b79] transition group",
+                  isActive(link.path) ? "text-[#3e5b79]" : "text-neutral-800"
                 )}
               >
                 {link.label}

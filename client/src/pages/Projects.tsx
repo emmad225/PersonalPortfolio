@@ -59,7 +59,7 @@ const Projects = () => {
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="mb-6 md:mb-0">
                   <span className="text-2xl font-display font-bold">
-                    Emma<span className="text-[#6b7280]">Duffy</span>
+                    <span className="text-[#3e5b79]">Emma</span><span className="text-[#6b7280]">Duffy</span>
                   </span>
                   <p className="text-neutral-400 mt-2">
                     Software and Data Engineering
