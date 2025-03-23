@@ -106,7 +106,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-[#ff7675] opacity-70 blur-xl"></div>
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-[#6b7280] opacity-70 blur-xl"></div>
                 <div className="h-64 w-64 sm:h-80 sm:w-80 rounded-full overflow-hidden relative border-8 border-white shadow-xl">
                   <img
                     src="https://github.com/emmad225/PersonalWebsiteImages/blob/ac0a1f6112d5a2872f74900cc314fe160732518c/SOLO%20cropped.jpg?raw=true"
@@ -177,7 +177,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <span className="text-2xl font-display font-bold">
-                Emma<span className="text-[#ff7675]">Duffy</span>
+                Emma<span className="text-[#6b7280]">Duffy</span>
               </span>
               <p className="text-neutral-400 mt-2">
                 Software and Data Engineering
