@@ -24,7 +24,7 @@ const About = () => {
                 <div className="relative rounded-xl overflow-hidden shadow-xl">
                   <img 
                     src="https://images.unsplash.com/photo-1573165850883-9b0e18609e51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                    alt="Jane Doe in her lab" 
+                    alt="Emma Duffy in her lab" 
                     className="w-full h-auto"
                   />
                 </div>
@@ -53,21 +53,23 @@ const About = () => {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact">
-                  <a className={cn(
+                <Link 
+                  href="/contact"
+                  className={cn(
                     buttonVariants({ size: "default" }),
                     "rounded-full bg-primary hover:bg-primary/90 font-accent"
-                  )}>
-                    <i className="fas fa-envelope mr-2"></i> Get In Touch
-                  </a>
+                  )}
+                >
+                  <i className="fas fa-envelope mr-2"></i> Get In Touch
                 </Link>
-                <Link href="/projects">
-                  <a className={cn(
+                <Link 
+                  href="/projects"
+                  className={cn(
                     buttonVariants({ variant: "outline", size: "default" }),
                     "rounded-full border-primary text-primary hover:bg-primary hover:text-white font-accent"
-                  )}>
-                    <i className="fas fa-eye mr-2"></i> View My Work
-                  </a>
+                  )}
+                >
+                  <i className="fas fa-eye mr-2"></i> View My Work
                 </Link>
               </div>
             </motion.div>
@@ -109,7 +111,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <span className="text-2xl font-display font-bold">Jane<span className="text-[#ff7675]">Doe</span></span>
+              <span className="text-2xl font-display font-bold">Emma<span className="text-[#ff7675]">Duffy</span></span>
               <p className="text-neutral-400 mt-2">Data Scientist & STEM Advocate</p>
             </div>
             
@@ -130,7 +132,7 @@ const About = () => {
           </div>
           
           <div className="border-t border-neutral-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-neutral-400 text-sm">© {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
+            <p className="text-neutral-400 text-sm">© {new Date().getFullYear()} Emma Duffy. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors mr-6">Privacy Policy</a>
               <a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a>
