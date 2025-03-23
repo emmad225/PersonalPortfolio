@@ -56,21 +56,21 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 font-accent text-sm tracking-wide">
             {navLinks.map((link) => (
-              <Link key={link.path} href={link.path}>
-                <a
+              <Link 
+                key={link.path} 
+                href={link.path}
+                className={cn(
+                  "relative py-5 px-1 hover:text-primary transition group",
+                  isActive(link.path) ? "text-primary" : "text-neutral-800"
+                )}
+              >
+                {link.label}
+                <span
                   className={cn(
-                    "relative py-5 px-1 hover:text-primary transition group",
-                    isActive(link.path) ? "text-primary" : "text-neutral-800"
+                    "absolute bottom-4 left-0 w-full h-0.5 bg-primary transform transition-transform duration-300",
+                    isActive(link.path) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                   )}
-                >
-                  {link.label}
-                  <span
-                    className={cn(
-                      "absolute bottom-4 left-0 w-full h-0.5 bg-primary transform transition-transform duration-300",
-                      isActive(link.path) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-                    )}
-                  ></span>
-                </a>
+                ></span>
               </Link>
             ))}
           </div>
@@ -92,16 +92,16 @@ const Navbar = () => {
         <div className="md:hidden bg-white pb-3 shadow-lg">
           <div className="px-4 pt-2 pb-3 space-y-1 font-accent">
             {navLinks.map((link) => (
-              <Link key={link.path} href={link.path}>
-                <a
-                  onClick={handleLinkClick}
-                  className={cn(
-                    "block px-3 py-2 text-base hover:text-primary hover:bg-neutral-100 rounded-md",
-                    isActive(link.path) ? "text-primary" : "text-neutral-800"
-                  )}
-                >
-                  {link.label}
-                </a>
+              <Link 
+                key={link.path} 
+                href={link.path}
+                onClick={handleLinkClick}
+                className={cn(
+                  "block px-3 py-2 text-base hover:text-primary hover:bg-neutral-100 rounded-md",
+                  isActive(link.path) ? "text-primary" : "text-neutral-800"
+                )}
+              >
+                {link.label}
               </Link>
             ))}
           </div>

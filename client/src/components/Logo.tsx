@@ -6,11 +6,9 @@ interface LogoProps {
 
 const Logo = ({ className }: LogoProps) => {
   return (
-    <Link href="/">
-      <a className={`text-2xl font-display font-bold ${className}`}>
-        <span className="text-primary">Jane</span>
-        <span className="text-[#ff7675]">Doe</span>
-      </a>
+    <Link href="/" className={`text-2xl font-display font-bold ${className}`}>
+      <span className="text-primary">Jane</span>
+      <span className="text-[#ff7675]">Doe</span>
     </Link>
   );
 };
