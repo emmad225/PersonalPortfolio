@@ -19,8 +19,8 @@ const About = () => {
                 <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-primary to-[#6b7280] opacity-70 blur-xl"></div>
                 <div className="relative rounded-xl overflow-hidden shadow-xl">
                   <img
-                    src="https://images.unsplash.com/photo-1573165850883-9b0e18609e51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                    alt="Emma Duffy"
+                    src="https://github.com/emmad225/PersonalWebsiteImages/blob/main/farm.jpg?raw=true"
+                    alt="My hometown in Maine"
                     className="w-full h-auto"
                   />
                 </div>
@@ -39,24 +39,21 @@ const About = () => {
               <div className="w-20 h-1 bg-[#6b7280] mb-6"></div>
 
               <p className="text-neutral-600 mb-6">
-                I'm a passionate data scientist and STEM advocate with over 5
-                years of experience in transforming complex data into actionable
-                insights. My journey in the tech world began with a fascination
-                for how data can tell compelling stories and drive meaningful
-                change.
+                A recent graduate of Boston College, where I earned my degree in
+                Computer Science and Marketing. Originally from Maine, I grew up
+                playing three sports, which instilled in me a strong sense of
+                teamwork and dedication. During my time at Boston College, I was
+                actively engaged in various communities, including Residential
+                Life, Campus Recreation, and TEDxBostonCollege. These
+                experiences not only enriched my academic journey but also
+                allowed me to develop strong leadership and collaboration
+                skills.
               </p>
 
               <p className="text-neutral-600 mb-6">
-                As a woman in STEM, I'm dedicated to promoting diversity and
-                inclusion in the field. I believe that diverse perspectives lead
-                to more innovative solutions and better outcomes for everyone.
-              </p>
-
-              <p className="text-neutral-600 mb-8">
-                When I'm not coding or analyzing data, you can find me mentoring
-                aspiring data scientists, speaking at tech conferences, or
-                exploring the great outdoors. I'm constantly learning and
-                pushing the boundaries of what's possible with data.
+                In my free time, I love to read, listen to podcasts, and
+                exercise, and make fun memories with my friends. I am always on
+                the lookout for new ideas and inspiration.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -73,7 +70,7 @@ const About = () => {
                   href="/projects"
                   className={cn(
                     buttonVariants({ variant: "outline", size: "default" }),
-                    "rounded-full border-primary text-primary hover:bg-primary hover:text-white font-accent",
+                    "rounded-full bg-[#3e5b79] hover:bg-[#3e5b79]/90 text-white hover:text-white font-accent",
                   )}
                 >
                   <i className="fas fa-eye mr-2"></i> View My Work
@@ -88,36 +85,36 @@ const About = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"></div>
       </section>
 
-      {/* Footer included in every page */}
-      <footer className="bg-neutral-900 text-white py-12">
+      {/* Footer */}
+      <footer className="bg-[#3e5b79] text-primary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <span className="text-2xl font-display font-bold">
-                Emma<span className="text-[#6b7280]">Duffy</span>
-              </span>
-              <p className="text-neutral-400 mt-2">
+              <span className="text-2xl font-bold">Emma Duffy</span>
+              <p className="text-primary-foreground/80 mt-2">
                 Software and Data Engineering
               </p>
             </div>
 
             <div className="flex space-x-6">
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
+                href="https://www.linkedin.com/in/emma-duffy4/"
+                className="text-white hover:text-neutral-400 transition-colors"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
+                href="https://github.com/emmad225/"
+                className="text-white hover:text-neutral-400 transition-colors"
               >
                 <i className="fab fa-github"></i>
               </a>
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
-              ></a>
+                href="mailto:eduffy225@gmail.com"
+                className="text-white hover:text-neutral-400 transition-colors"
+              >
+                <i className="fas fa-envelope mr-2"></i>
+              </a>
             </div>
           </div>
 
@@ -125,20 +122,6 @@ const About = () => {
             <p className="text-neutral-400 text-sm">
               © {new Date().getFullYear()} Emma Duffy. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors mr-6"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </footer>

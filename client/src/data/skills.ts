@@ -9,17 +9,7 @@ export interface SkillGroup {
 
 export const skills: SkillGroup[] = [
   {
-    category: "Data Science, Analytics & Visualization",
-    items: [
-      { name: "Tableau" },
-      { name: "PowerBI" },
-      { name: "Looker Studio" },
-      { name: "Snowflake" },
-      { name: "pandas, numpy, matplotlib, seaborn, plotly, chart.js, d3.js" },
-    ],
-  },
-  {
-    category: "Programming",
+    category: "Programming Languages",
     items: [
       { name: "Python" },
       { name: "JavaScript" },
@@ -28,7 +18,32 @@ export const skills: SkillGroup[] = [
       { name: "C" },
       { name: "HTML" },
       { name: "CSS" },
-      { name: "React.js" },
+    ],
+  },
+  {
+    category: "Frameworks & Libraries",
+    items: [
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Pandas" },
+      { name: "Numpy" },
+      { name: "Matplotlib" },
+      { name: "Seaborn" },
+      { name: "Plotly" },
+      { name: "Chart.js" },
+      { name: "d3.js" },
+    ],
+  },
+  {
+    category: "Data & Analytics",
+    items: [
+      { name: "Tableau" },
+      { name: "Power BI" },
+      { name: "Snowflake" },
+      { name: "SQL" },
+      { name: "Data Visualization" },
+      { name: "Machine Learning" },
+      { name: "Statistical Analysis" },
     ],
   },
   {

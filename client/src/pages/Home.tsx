@@ -75,8 +75,7 @@ const Home = () => {
                 Computer Science and Marketing graduate of Boston College,
                 combining technology and creativity to deliver impactful
                 solutions. Passionate about software engineering, data science,
-                and full-stack development, with a focus on coding, data
-                visualization, and collaborative problem-solving.
+                and full-stack development.
               </motion.p>
               <motion.div className="flex flex-wrap gap-4" variants={fadeInUp}>
                 <Link
@@ -106,12 +105,12 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-[#3e5b79] to-[#6b7280] opacity-70 blur-xl"></div>
-                <div className="h-64 w-64 sm:h-80 sm:w-80 rounded-full overflow-hidden relative border-8 border-white shadow-xl">
+                {/* Simplified, elegant photo treatment */}
+                <div className="overflow-hidden transition-all duration-500 hover:shadow-xl">
                   <img
                     src="https://github.com/emmad225/PersonalWebsiteImages/blob/ac0a1f6112d5a2872f74900cc314fe160732518c/SOLO%20cropped.jpg?raw=true"
                     alt="Portrait of Emma Duffy"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover border-[6px] border-[#F1F1F1] shadow-md transition-transform duration-500 hover:scale-[1.02]"
                   />
                 </div>
               </div>
@@ -129,7 +128,7 @@ const Home = () => {
           />
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
             variants={staggerChildren}
             initial="hidden"
             whileInView="visible"
@@ -171,36 +170,36 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer included in every page */}
-      <footer className="bg-neutral-900 text-white py-12">
+      {/* Footer */}
+      <footer className="bg-[#3e5b79] text-primary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <span className="text-2xl font-display font-bold">
-                <span className="text-[#3e5b79]">Emma</span><span className="text-[#6b7280]">Duffy</span>
-              </span>
-              <p className="text-neutral-400 mt-2">
+              <span className="text-2xl font-bold">Emma Duffy</span>
+              <p className="text-primary-foreground/80 mt-2">
                 Software and Data Engineering
               </p>
             </div>
 
             <div className="flex space-x-6">
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
+                href="https://www.linkedin.com/in/emma-duffy4/"
+                className="text-white hover:text-neutral-400 transition-colors"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
+                href="https://github.com/emmad225/"
+                className="text-white hover:text-neutral-400 transition-colors"
               >
                 <i className="fab fa-github"></i>
               </a>
               <a
-                href="#"
-                className="text-neutral-400 hover:text-white transition-colors"
-              ></a>
+                href="mailto:eduffy225@gmail.com"
+                className="text-white hover:text-neutral-400 transition-colors"
+              >
+                <i className="fas fa-envelope mr-2"></i>
+              </a>
             </div>
           </div>
 
@@ -208,20 +207,6 @@ const Home = () => {
             <p className="text-neutral-400 text-sm">
               © {new Date().getFullYear()} Emma Duffy. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors mr-6"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </footer>

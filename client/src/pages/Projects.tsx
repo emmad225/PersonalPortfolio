@@ -20,22 +20,13 @@ const staggerChildren = {
 };
 
 const Projects = () => {
-  const tableauVisualizations = [
-    {
-      title: "Spotify Data Analysis",
-      description:
-        "An interactive visualization of Spotify music listening data.",
-      url: "https://public.tableau.com/shared/9NYFB86WP?:display_count=n&:origin=viz_share_link",
-    },
-  ];
-
   return (
     <main className="min-h-screen pt-16">
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <PageTitle
             title="My Projects"
-            subtitle="Explore my portfolio of data science and visualization work."
+            subtitle="Explore my portfolio of software engineering and data science work."
           />
 
           <motion.div
@@ -53,57 +44,43 @@ const Projects = () => {
         </div>
       </section>
 
-          {/* Footer included in every page */}
-          <footer className="bg-neutral-900 text-white py-12">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="mb-6 md:mb-0">
-                  <span className="text-2xl font-display font-bold">
-                    <span className="text-[#3e5b79]">Emma</span><span className="text-[#6b7280]">Duffy</span>
-                  </span>
-                  <p className="text-neutral-400 mt-2">
-                    Software and Data Engineering
-                  </p>
-                </div>
+      {/* Footer */}
+      <footer className="bg-[#3e5b79] text-primary-foreground py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-6 md:mb-0">
+              <span className="text-2xl font-bold">Emma Duffy</span>
+              <p className="text-primary-foreground/80 mt-2">
+                Software and Data Engineering
+              </p>
+            </div>
 
-                <div className="flex space-x-6">
-                  <a
-                    href="#"
-                    className="text-neutral-400 hover:text-white transition-colors"
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-neutral-400 hover:text-white transition-colors"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-neutral-400 hover:text-white transition-colors"
-                  ></a>
-                </div>
-              </div>
+            <div className="flex space-x-6">
+              <a
+                href="https://www.linkedin.com/in/emma-duffy4/"
+                className="text-white hover:text-neutral-400 transition-colors"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/emmad225/"
+                className="text-white hover:text-neutral-400 transition-colors"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="mailto:eduffy225@gmail.com"
+                className="text-white hover:text-neutral-400 transition-colors"
+              >
+                <i className="fas fa-envelope mr-2"></i>
+              </a>
+            </div>
+          </div>
 
           <div className="border-t border-neutral-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-neutral-400 text-sm">
               © {new Date().getFullYear()} Emma Duffy. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors mr-6"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-neutral-400 hover:text-white text-sm transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </footer>

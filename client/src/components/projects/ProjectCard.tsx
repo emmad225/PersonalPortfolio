@@ -8,8 +8,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const { title, description, image, category, tags, link } = project;
 
   const categoryColors: Record<string, string> = {
-    "Data Visualization": "bg-primary",
-    "Machine Learning": "bg-primary",
+    "Data Visualization": "bg-[#D3D3D3]",
+    "Machine Learning": "bg-[#D3D3D3]",
   };
 
   const categoryColor = categoryColors[category] || "bg-primary";
@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/70 via-transparent to-transparent"></div>
         <div className="absolute bottom-0 left-0 p-4">
           <span
-            className={`px-3 py-1 ${categoryColor} text-white text-xs font-accent rounded-full shadow-md`}
+            className={`px-3 py-1 ${categoryColor} text-black text-xs font-accent rounded-full shadow-md`}
           >
             {category}
           </span>
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-neutral-100 text-neutral-600 text-xs rounded-full"
+              className="px-2 py-1 bg-[#D3D3D3] text-black text-xs rounded-full"
             >
               {tag}
             </span>
